@@ -1,8 +1,8 @@
 
 
-const LineItem =({id,item,handleCheck,handleDelete}) => {
+const LineItem =({item,handleCheck,handleDelete}) => {
     return (
-        <li key = {id}>
+        <li key = {item.id}>
                             <input 
                                 type="checkbox"
                                 onChange={()=>handleCheck(item.id)}
